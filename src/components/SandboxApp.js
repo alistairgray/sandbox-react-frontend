@@ -1,11 +1,20 @@
 import React from 'react';
 
-class SandboxApp extends React.Component {
-    render(){
-        return(
-            <div>
+// Components
+import SpaceXAPI from './SpaceXAPI';
 
-            </div>
-        ) // return()
-    } // render()
-} // class SandboxApp
+
+function SandboxApp() {
+
+
+
+    return(
+        <div>
+            <h1>Alistair's Sandbox</h1>
+            {/* <Nav /> */}
+            <SpaceXAPI />
+        </div>
+    )
+}
+
+export default SandboxApp;
