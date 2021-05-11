@@ -1,0 +1,154 @@
+/* ------------------------- */
+/* Colour Palette */
+/* ------------------------- */
+
+/* #000000 - Black */
+/* #FFFFFF - White */
+/* #E63946 - Imperial Red*/
+/* #F1FAEE - Honeydew */
+/* #A8DADC - Powder Blue */
+/* #457B9D - Celadon Blue */
+/* #1D3557 - Prussian Blue*/
+
+/* ------------------------- */
+/* Fonts */
+/* ------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+/* ------------------------- */
+/* Global Styles */
+/* ------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434; /* dark gray - almost black */
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;  
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;   
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', sans-serif; 
+    font-weight: 600;
+}
+
+.content-wrap {
+    max-width: 1400px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+
+.head {
+    background-color: #ffffff;
+}
+
+#h1-heading {
+    text-align: left;
+    max-width: 650px;
+    font-size: 100px;
+    margin-left: 20px;
+    margin-top: 60px;
+    padding: 15px;
+    border: solid 1px blue;
+    font-weight: 400;
+}
+
+.navbar {
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar img {
+    max-width: 100px;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+.navbar li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 15px;
+}
+
+.navbar a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------- */
+/* Main */
+/* ------------------------- */
+
+.landing {
+    border: solid 1px green;
+}
+
+.spaceX-items {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(3, 400px [col-start]);
+    column-gap: 15px;
+}
+
+.spaceX-items li {
+    list-style-type: none;
+    border: 1px solid red;
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.spaceX-items li > img{
+    margin-bottom: 10px;
+    max-width: 250px;
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+
+.foot {
+    background-color: #E63946;
+    color: #F1FAEE;
+    text-align: center;
+}

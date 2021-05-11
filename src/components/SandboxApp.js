@@ -1,18 +1,26 @@
 import React from 'react';
 
+
 // Components
-import SpaceXAPI from './SpaceXAPI';
+import Heading from './Heading';
+import Navbar from './Navbar';
+import Landing from './Landing';
 
 
-function SandboxApp() {
-
-
+const SandboxApp = () => {
 
     return(
         <div>
-            <h1>Alistair's Sandbox</h1>
-            {/* <Nav /> */}
-            <SpaceXAPI />
+            <header className="head">
+                <Navbar />
+                <Heading />
+            </header>
+            <main className="main">
+                <Landing />
+            </main>
+            <footer className="foot">
+                &copy; Alistair Gray 2021
+            </footer>
         </div>
     )
 }
