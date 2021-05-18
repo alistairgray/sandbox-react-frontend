@@ -4,11 +4,11 @@ export const NavbarItems = [
         url: '#',
     },
     {
-        title: 'Lorem',
+        title: 'SpaceX',
         url: '#',
     },
     {
-        title: 'Ipsum',
+        title: 'Roadster',
         url: '#',
     },
     {

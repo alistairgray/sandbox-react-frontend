@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-// Components
+// components
 import Heading from './Heading';
 import Navbar from './Navbar';
 import Landing from './Landing';

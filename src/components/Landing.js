@@ -1,12 +1,16 @@
 import React from 'react';
 import axios from 'axios';
 
-import SpaceXAPI from './SpaceXAPI';
+import SpaceX from './spacex/SpaceX';
 
 function Landing() {
     return(
         <section className="landing content-wrap flex-container">
-            <SpaceXAPI />
+
+            <div className="spaceX">
+                <SpaceX />
+            </div>
+            
         </section>
     )
 }

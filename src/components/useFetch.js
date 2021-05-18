@@ -4,6 +4,7 @@ export function useFetch(uri) {
     const [data, setData] = useState()
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState()
+    const [request, setRequest] = useState("past")
 
     useEffect(() => {
         if(!uri) return;
