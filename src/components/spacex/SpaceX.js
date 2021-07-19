@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {useFetch} from '../useFetch';
 
 const SpaceX = () => {
@@ -19,7 +19,18 @@ const SpaceX = () => {
     setRequest("past");
   }
 
-    
+  useEffect(() => {
+    // replace image if none is found and no error is received
+    const spaceXImages = document.getElementsByClassName("spaceXImg");
+    for(let i=0; i < spaceXImages.length; i++){
+      if(spaceXImages[i].currentSrc == ""){
+        return spaceXImages[i].currentSrc = "/images/spacex-placeholder.jpg"
+      }
+    }
+
+    // unmounted
+  }, []);
+      
   const {loading, data, error} = useFetch(`https://api.spacexdata.com/v3/launches/${request}?limit=8&order=asc`);
   if(loading) return <h1>loading...</h1>;
   if(error)
@@ -41,6 +52,7 @@ const SpaceX = () => {
 
                       {/* Use placeholder img if none available */}
                         <img 
+                        className="spaceXImg"
                         onError={addDefaultSrc}
                         src={r.links.mission_patch_small} 
                         alt={r.mission_name}
